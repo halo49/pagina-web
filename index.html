@@ -33,6 +33,13 @@
         <li>Para pasarse a una rama y crearla si no existe (git checkout -b <nombreBranch>)</li>
         <li>Fusiona a la rama principal la rama que se quiere (git merge <nombreRamaQueSeQuiere>)</li>
         <li>Compara dos ramas (git diff main <nombreRama>)</li>
+        <li>Despues de un merge entre ramas, para eliminar la rama que ya no se utiliza porque ya se elimino
+            <br> se usa (git branch -d <ramaAEliminar>) pero esta solo funciona si ya no hay nada que fusionar de la rama a eliminar
+            <br> si hay algo en la rama que se quiere eliminar este comando marca error para proteger estos cambios y poder fusionarlos
+            <br> pero si hay cambios que no se requieren o ya no sirve la rama y se quiere eliminar entonces se cambia la -d por -D y 
+            <br> esta rama a eliminar sera eliminada y se perdera
+        </li>
+        <li>Para limpiar el repositorio [recolector de basura] (git gc)</li>
     </ul>
 </p>
 <p>
