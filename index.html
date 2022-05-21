@@ -14,7 +14,7 @@
 <p>
     <h1>Comando locales</h1>
     <ul>
-        <li>Subir cambios al repositorio (git commit -m 'Comentario del commmit')</li>
+        <li>Subir cambios al repositorio (git commit -m 'Comentario del commit')</li>
         <li>Comparar cambios entre archivos (git diff)</li>
         <li>Checar todo lo que hay pendiente (git status)</li>
         <li>Subir a stage todos los cambios (git add .)</li>
@@ -28,13 +28,13 @@
         <li>Para pasar a stage y hacer commit en el mismo comando (git commit -am 'Mensaje del commit')</li>
         <li>Para ver cambios realizado (git log)</li>
         <li>Para ver ramas locales (git branch)</li>
-        <li>Crear una rama local (git branch <nombreBranch>)</li>
-        <li>Para ponerse en una rama en particular (git checkout <nombreBranch>)</li>
-        <li>Para pasarse a una rama y crearla si no existe (git checkout -b <nombreBranch>)</li>
-        <li>Fusiona a la rama principal la rama que se quiere (git merge <nombreRamaQueSeQuiere>)</li>
-        <li>Compara dos ramas (git diff main <nombreRama>)</li>
+        <li>Crear una rama local (git branch [nombreBranch>]</li>
+        <li>Para ponerse en una rama en particular (git checkout [nombreBranch>]</li>
+        <li>Para pasarse a una rama y crearla si no existe (git checkout -b [nombreBranch])</li>
+        <li>Fusiona a la rama principal la rama que se quiere (git merge [nombreRamaQueSeQuiere])</li>
+        <li>Compara dos ramas (git diff main [nombreRama])</li>
         <li>Despues de un merge entre ramas, para eliminar la rama que ya no se utiliza porque ya se elimino
-            <br> se usa (git branch -d <ramaAEliminar>) pero esta solo funciona si ya no hay nada que fusionar de la rama a eliminar
+            <br> se usa (git branch -d [ramaAEliminar]) pero esta solo funciona si ya no hay nada que fusionar de la rama a eliminar
             <br> si hay algo en la rama que se quiere eliminar este comando marca error para proteger estos cambios y poder fusionarlos
             <br> pero si hay cambios que no se requieren o ya no sirve la rama y se quiere eliminar entonces se cambia la -d por -D y 
             <br> esta rama a eliminar sera eliminada y se perdera
@@ -46,22 +46,22 @@
         <li>En los comentarios de un commit se puede hacer referencia a un issue y este se reflejara en la pagina de github (git commit -m 'Commit Message #1 (es una referencia a un issue numero 1)')</li>
         <li>Se puede cerrar un issue desde un commit (git commit -m 'Closes #1') el Closes debe de estar en ingles en alguna parte del parrafo del mensaje del commit</li>
         <li>Para revertir git add (git reset HEAD .)</li>
-        <li>Para ejecutar git add por pasos (git add -p <nombreDelArchivo>) esto tiene diferentes opciones [y(si),n (no), q(salir)]</li>
+        <li>Para ejecutar git add por pasos (git add -p [nombreDelArchivo]) esto tiene diferentes opciones [y(si),n (no), q(salir)]</li>
     </ul>
 </p>
 <p>
     <h1>Comando remotos</h1>
     <ul>
-        <li>Clonar un repositorio (git clone <url del repositorio>)</li>
+        <li>Clonar un repositorio (git clone [url del repositorio])</li>
         <li>Para subir el repositorio local al repositorio remoto (git push origin main)</li>
         <li>Para bajar los cambios del remoto al local (git pull origin main)</li>
         <li>
-            Se puede subir una rama de local a remoto (git push origin <nombreDeLaRama>), puedo solicitar un pull request para que fusionen en la nube la rama que subi
+            Se puede subir una rama de local a remoto (git push origin [nombreDeLaRama]), puedo solicitar un pull request para que fusionen en la nube la rama que subi
             <br> con la rama main y mientras lo hacen yo puedo seguir subiendo commits a mi rama remota, cuando hagan el merge en la nube debo de bajar los cambios de la rama
             <br> main que se fusiono a mi main local y ya puedo eliminar la rama local porque ya no serviria de nada ya que ya esta funcionando fusionada con la rama main
         </li>
-        <li>Para bajar una rama (<code>git pull origin <ramaRemota>:<ramaLocal></code>)</li>
-        <li>Para subir una rama (<code>git push origin <ramaLocal>:<ramaRemota></code>)</li>
+        <li>Para bajar una rama (git pull origin [ramaRemota]:[ramaLocal])</li>
+        <li>Para subir una rama (git push origin [ramaLocal]:[ramaRemota])</li>
     </ul>
 </p>
 </body>
