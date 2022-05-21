@@ -46,7 +46,7 @@
         <li>En los comentarios de un commit se puede hacer referencia a un issue y este se reflejara en la pagina de github (git commit -m 'Commit Message #1 (es una referencia a un issue numero 1)')</li>
         <li>Se puede cerrar un issue desde un commit (git commit -m 'Closes #1') el Closes debe de estar en ingles en alguna parte del parrafo del mensaje del commit</li>
         <li>Para revertir git add (git reset HEAD .)</li>
-        <li>Para ejecutar git add por pasos (git add -p <nombreDelArchivo>)</li>
+        <li>Para ejecutar git add por pasos (git add -p <nombreDelArchivo>) esto tiene diferentes opciones [y(si),n (no), q(salir)]</li>
     </ul>
 </p>
 <p>
@@ -55,6 +55,11 @@
         <li>Clonar un repositorio (git clone <url del repositorio>)</li>
         <li>Para subir el repositorio local al repositorio remoto (git push origin main)</li>
         <li>Para bajar los cambios del remoto al local (git pull origin main)</li>
+        <li>
+            Se puede subir una rama de local a remoto (git push origin <nombreDeLaRama>), puedo solicitar un pull request para que fusionen en la nube la rama que subi
+            <br> con la rama main y mientras lo hacen yo puedo seguir subiendo commits a mi rama remota, cuando hagan el merge en la nube debo de bajar los cambios de la rama
+            <br> main que se fusiono a mi main local y ya puedo eliminar la rama local porque ya no serviria de nada ya que ya esta funcionando fusionada con la rama main
+        </li>
     </ul>
 </p>
 </body>
